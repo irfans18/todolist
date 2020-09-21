@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v2dark30"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/v2dark60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LET'S DO IT!"
+            android:textAlignment="center"
+            android:textColor="@color/v2dark5"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/subtitlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Finish Quickly, Rest Longly"
+            android:textAlignment="center"
+            android:textColor="@color/v2dark30"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/v2dark5" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ourdoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/endpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="no more does"
+        android:textAlignment="center"
+        android:textColor="@color/v2dark5"
+        android:textSize="16sp" />
+
+</LinearLayout>
