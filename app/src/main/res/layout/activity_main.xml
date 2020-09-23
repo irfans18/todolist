@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v2dark30"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/v2dark60"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp">
+
+                <TextView
+                    android:id="@+id/titlepage_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="LET'S DO IT!"
+                    android:textColor="@color/v2dark5"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/subtitlepage_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Finish Quickly, Rest Longly"
+                    android:textColor="@color/v2dark30"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addTask_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="65dp"
+                android:background="@drawable/bgadditem"
+                android:textAlignment="center"
+                android:text="+"
+                android:textSize="38sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/border_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/v2dark5" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ourTask_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="15dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/endpage_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="no more does"
+        android:textAlignment="center"
+        android:textColor="@color/v2dark5"
+        android:textSize="16sp" />
+
+</LinearLayout>

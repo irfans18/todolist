@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/v2dark30"
+    android:orientation="vertical"
+    tools:context=".NewTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/v2dark60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlepage_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Create New Task"
+            android:textColor="@color/v2dark5"
+            android:textSize="32sp" />
+
+        <View
+            android:id="@+id/border_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/v2dark5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bgitemtask"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addTitle_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Add Title"
+                android:textColor="@color/v2dark30"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/taskTitle_et"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="What will you do?"
+                android:inputType="text"
+                android:paddingLeft="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addDesc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Description"
+                android:textColor="@color/v2dark30"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/descTitle_et"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="How do you do that?"
+                android:inputType="text"
+                android:paddingLeft="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addDate_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Deadline"
+                android:textColor="@color/v2dark30"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/addDate_et"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bginputtask"
+                android:hint="When will you finish it?"
+                android:inputType="datetime"
+                android:paddingLeft="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveTask_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bgcreatebtn"
+        android:textSize="22sp"
+        android:textColor="@color/v2dark5"
+        android:text="Create Task"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/cancelTask_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bgcancelbtn"
+        android:textSize="22sp"
+        android:textColor="#AFAFAF"
+        android:text="Cancel"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
