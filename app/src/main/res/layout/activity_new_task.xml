@@ -67,7 +67,9 @@
                 android:background="@drawable/bginputtask"
                 android:hint="What will you do?"
                 android:inputType="text"
-                android:paddingLeft="12dp" />
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:importantForAutofill="no" />
 
         </LinearLayout>
 
@@ -95,7 +97,9 @@
                 android:background="@drawable/bginputtask"
                 android:hint="How do you do that?"
                 android:inputType="text"
-                android:paddingLeft="12dp" />
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:importantForAutofill="no" />
         </LinearLayout>
 
         <LinearLayout
@@ -122,7 +126,9 @@
                 android:background="@drawable/bginputtask"
                 android:hint="When will you finish it?"
                 android:inputType="datetime"
-                android:paddingLeft="12dp" />
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:importantForAutofill="no" />
 
         </LinearLayout>
 
